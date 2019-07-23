@@ -3,6 +3,7 @@
 import math
 
 breakTime = 0.25
+lunchBreak = 0.25
 
 #start time input and calculation
 startTime = input("enter your start time in format 7:00 for example   ")
@@ -20,7 +21,7 @@ workingTime = input("how many hours do you want to work? enter in format 8:15 fo
 
 workingTimeList = workingTime.split(':')
 
-calculateWorkTime = float(workingTimeList[0]) + float(workingTimeList[1]) / 60
+calculateWorkTime = breakTime + lunchBreak + float(workingTimeList[0]) + float(workingTimeList[1]) / 60
 
 print("your target working time is (with break)  ", calculateWorkTime)
 
@@ -36,7 +37,7 @@ calculatedEndHours = calculatedEndTime[1]
 calculatedEndMinutes = calculatedEndTime[0] * 60 / 100
 
 #print(calculatedEndHours)
-#print(round(calculatedEndMinutes, 2))
+print(round(calculatedEndMinutes, 2))
 
 EndTime = calculatedEndHours + round(calculatedEndMinutes, 2)
 
