@@ -1,6 +1,6 @@
 #Work time calculator
 
-#Amanda Künzle, 22.07.2019
+#Amanda Kuenzle, 22.07.2019
 
 #--------------------------------------------------#
 
@@ -9,7 +9,10 @@
 #--------------------------------------------------#
 
 
+import time
 import math
+
+print(time.localtime())
 
 breakTime = 0.25
 lunchBreak = 0.25
