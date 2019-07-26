@@ -8,8 +8,17 @@
 
 #--------------------------------------------------#
 
-
+import tkinter
 import math
+
+#window config
+window = Tk()
+window.title("TimeCalculator")
+#
+start_label = Label(window, text="when do you want to start work? for example 07:00")
+duration_label1 = Label(window, text="how long do you want to work? for example: 08:15")
+
+
 
 breakTime = 0.25
 lunchBreak = 0.25
